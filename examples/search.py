@@ -6,16 +6,14 @@ from pynput.keyboard import Key, Controller
 keyboard = Controller()
 
 driver = webdriver.Firefox(executable_path ='./geckodriver')
-driver.get("http://bugzilla.ensenada.gob.mx")
-#assert "Tramites Ensenada" in driver.title
-
+driver.get("http://google.com")
 #login apache access
 time.sleep(1)
 keyboard.type("tramites")
 time.sleep(0.3)
 keyboard.press(Key.tab)
 keyboard.release(Key.tab)
-keyboard.type("tramites2021")
+keyboard.type("toto11234")
 time.sleep(0.3)
 keyboard.press(Key.enter)
 keyboard.release(Key.enter)
@@ -29,7 +27,6 @@ elem.send_keys(Keys.RETURN)
 time.sleep(1)
 sample_chars = 'trmk90iuloes45cand'
 sample_list_chars = ["t","d","de","k90","tramite","titulo","creacion","Test","Medida","prueba","lorem","asd"]
-#driver.get("http://bugzilla.ensenada.gob.mx/~tramites/login")
 for i in range(10):
     lenght = random.randint(3,10)
     search = "".join((random.choice(sample_chars)) for x in range(lenght))
