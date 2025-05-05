@@ -1,0 +1,7 @@
+99:yo,tu, el, nosotros, aquellos, la, y
+101:amor,ira,odio,enojo
+102:mueble,carro
+200: es, se, tuyo
+201:comeria, leyendo
+202:comiendo, leer
+311: azul, amarillo
